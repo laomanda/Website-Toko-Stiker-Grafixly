@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toko stiker kreatif dengan produk unik dan desain khusus untuk koleksi Anda">
+  <title>Toko Stiker Kreatif</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/xicon" href="img/logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+    body {
+      background-color: #f8fafc;
+      scroll-behavior: smooth;
+    }
+
+    .header-bg {
+      background-color: #f8fafc !Important;
+      color: black;
+
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-custom {
+      background-color: #387478;
+      border-radius: 30px;
+      padding: 12px 25px;
+      color: white;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #E2F1E7;
+      color: black;
+    }
+
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #2563eb;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      display: none;
+      font-size: 20px;
+    }
+
+    #back-to-top:hover {
+      background-color: #1e40af;
+    }
+
+    .testimonial {
+      border: 2px solid #2563eb;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: #343131;
+      color: white;
+    }
+
+    .eye-icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      color: black;
+      display: none;
+    }
+
+    .card {
+      position: relative;
+    }
+
+    .modal-header {
+      background-color: #2563eb;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="background-color: #343131 !important;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: League Spartan, sans-serif; font-weight: bold; font-size: 32px; color: white;">
+        <img src="img/logo.png" alt="Logo Toko Stiker Kreatif" width="115" height="120" class="me-2" style="border-radius: 50%;">
+        Toko Stiker Grafixly
+      </a>
+    </div>
+  </nav>
+
+  <header class="header-bg text-center py-20">
+    <h1 class="text-5xl font-bold">Koleksi Bermacam Stiker Kami</h1>
+    <p class="text-lg mt-4">Unik, Menarik, dan Cocok untuk Semua Usia</p>
+  </header>
+
+  <main>
+    <section class="container py-5">
+      <h2 class="text-center text-3xl font-bold mb-5" style="font-family: Rubik, sans-serif; font-weight: bold;">Produk
+        Stiker Kami</h2>
+      <div class="row text-center">
+
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card shadow-sm position-relative"
+            onclick="openModal('Sticker Custom (Hologram)', 'Sticker yang menarik, memiliki keunggulan yang baik yaitu dapat mengkilat saat terkena cahaya.', 'img/stiker.jpeg')">
+            <img src="img/stiker.jpeg" class="card-img-top" alt="Sticker Gojo">
+            <div class="eye-icon"><i class="fas fa-eye"></i></div>
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: Poppins, sans-serif; font-weight: bold;">Stiker Custom
+                (Hologram)</h5>
+              <p class="card-text">RP 3,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-sm position-relative"
+            onclick="openModal('Buku Notes + Sticker', 'Buku catatan dengan stiker yang dapat anda pilih dengan bebas dan gratis.', 'img/buku.jpeg')">
+            <img src="img/buku.jpeg" class="card-img-top" alt="Buku Notes + Sticker">
+            <div class="eye-icon"><i class="fas fa-eye"></i></div>
+            <div class="card-body">
+              <h5 class="card-title">Buku Notes + Sticker</h5>
+              <p class="card-text">RP 5,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow-sm position-relative"
+            onclick="openModal('Sticker Custom', 'Stiker yang dapat disesuaikan dengan keinginan Anda.', 'images/sticker-custom.png')">
+            <img src="images/sticker-custom.png" class="card-img-top" alt="Sticker Custom">
+            <div class="eye-icon"><i class="fas fa-eye"></i></div>
+            <div class="card-body">
+              <h5 class="card-title">Sticker Custom</h5>
+              <p class="card-text">RP 3,000</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-5">
+      <div class="container">
+        <h2 class="text-center text-3xl font-bold mb-5">Testimoni Pelanggan</h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-right">
+            <div class="testimonial">
+              <p>"Stiker yang bagus! Kualitasnya keren dan tahan lama!"</p>
+              <strong>- Afifah</strong>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="testimonial">
+              <p>"Suka sekali dengan pelayanannya"</p>
+              <strong>- Daus</strong>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-left">
+            <div class="testimonial">
+              <p>"Sus pegatinas personalizadas varían mucho. ¡El diseño también corresponde a mi pedido!"</p>
+              <strong>- Lionel Messi</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center py-5">
+      <a href="https://forms.gle/your-google-form-link" class="btn btn-custom">
+        Pesan Disini
+      </a>
+    </div>
+
+    <section class="container py-5">
+      <h2 class="text-center text-3xl font-bold mb-5">Kontak Kami</h2>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <h4><i class="fab fa-instagram me-2"></i> Instagram</h4>
+          <p>grafixlyyy.stiker</p>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h4><i class="fab fa-whatsapp me-2"></i> Telepon Via WA</h4>
+          <p>+62 857-1028-7514 (Nazril)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p style="color: white;">Stiker Grafixly Selalu Memberi Terbaik</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalLabel">Produk</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 id="modalProductName"></h5>
+          <p id="modalProductDescription"></p>
+          <img id="modalProductImage" src="" alt="Gambar Produk" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function openModal(name, description, image) {
+      document.getElementById('modalProductName').innerText = name;
+      document.getElementById('modalProductDescription').innerText = description;
+      document.getElementById('modalProductImage').src = image;
+      var modal = new bootstrap.Modal(document.getElementById('productModal'));
+      modal.show();
+    }
+
+    window.onscroll = function () {
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+
+</html>
